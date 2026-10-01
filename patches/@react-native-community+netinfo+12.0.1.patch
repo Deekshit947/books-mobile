@@ -1,0 +1,20 @@
+diff --git a/node_modules/@react-native-community/netinfo/android/src/newarch/com/reactnativecommunity/netinfo/NetInfoModule.java b/node_modules/@react-native-community/netinfo/android/src/newarch/com/reactnativecommunity/netinfo/NetInfoModule.java
+index 61e44c4..c112d2f 100644
+--- a/node_modules/@react-native-community/netinfo/android/src/newarch/com/reactnativecommunity/netinfo/NetInfoModule.java
++++ b/node_modules/@react-native-community/netinfo/android/src/newarch/com/reactnativecommunity/netinfo/NetInfoModule.java
+@@ -40,8 +40,8 @@ public class NetInfoModule extends NativeRNCNetInfoSpec {
+     }
+     
+     @Override
+-    public void onCatalystInstanceDestroy() {
+-        implementation.onCatalystInstanceDestroy();
++    public void invalidate() {
++        implementation.invalidate();
+     }
+ 
+     @Override
+@@ -49,3 +49,4 @@ public class NetInfoModule extends NativeRNCNetInfoSpec {
+         implementation.initialize();
+     }
+ }
++
